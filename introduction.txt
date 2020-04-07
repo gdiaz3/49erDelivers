@@ -1,0 +1,19 @@
+Introduction and Scope of the project.
+49er Delivers is a project that aims to design a fully normalized database
+system. This database will be used to keep tack of a food delivery application
+for UNC Charlotte. There will be data related to 10 different restaurants from
+which users can order.
+
+The scope of this project is limited to keeping track of the list of restaurants
+available, the menu of each restaurant including item price, delivery points,
+payment options, user data and preferences, employee data, relationship to
+UNC Charlotte and delivery personnel information which includes plate number
+and vehicle model and color.
+
+For each order placed there will be a $5.00. With only one customer tied to the
+order. There will be no need to itemize the invoice, just the total price and
+delivery charge. The order will also contain driver info and delivery items.
+A unique identifier will be assigned to each restaurant, and the identifier will
+be indicated on the order.
+
+  
