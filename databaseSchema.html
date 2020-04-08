@@ -1,0 +1,175 @@
+<html><head>
+<title>Schema Report for database: mydb</title>
+<style>
+        td,th {
+        text-align:left;
+        vertical-align:middle;
+        }
+        table {
+        border-collapse: collapse;
+        border: 1px solid;
+        }
+        caption, th, td {
+        padding: .2em .8em;
+        border: 1px solid #000000;
+        }
+        caption {
+        background: #D3D3D3;
+        font-weight: bold;
+        font-size: 1.1em;
+        }
+        th {
+        font-weight: bold;
+        background: #000000;
+        color: white;
+        }
+        td {
+        background: #FFFFFF;
+        }
+        </style>
+      </head>
+     <body>
+<h1>Schema Report for database: mydb</h1>
+<a id="home">Table List </a><br /><ul>
+<li><a href="#Users">Users </a></li>
+<li><a href="#Delivery Locations">Delivery Locations </a></li>
+<li><a href="#Drivers">Drivers </a></li>
+<li><a href="#Menus">Menus </a></li>
+<li><a href="#Restaurants">Restaurants </a></li>
+<li><a href="#Payments">Payments </a></li>
+<li><a href="#Orders">Orders </a></li>
+</ul>
+<a id="Users"></a><table style="width:100%"><caption>Table: Users </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>UserId</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Name</td><td>VARCHAR(50)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Email</td><td>VARCHAR(50)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Phone</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Address</td><td>VARCHAR(150)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Card</td><td>INT</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Delivery Locations"></a><table style="width:100%"><caption>Table: Delivery Locations </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>Locations ID</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>Name</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Intersection</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Coordinates</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Drivers"></a><table style="width:100%"><caption>Table: Drivers </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>Driver ID</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>Name</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Vehicle plate's #</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Vehicle's color</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Delivery rating</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Phone number</td><td>INT</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Hiring date</td><td>DATE</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Menus"></a><table style="width:100%"><caption>Table: Menus </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>MenuID</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>RestaurantID</td><td>INT</td><td>No</td><td>No</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Drinks</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Meals</td><td>VARCHAR(70)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Drink price</td><td>FLOAT</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Meal Price</td><td>FLOAT</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Desserts</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Dessert price</td><td>FLOAT</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Restaurants"></a><table style="width:100%"><caption>Table: Restaurants </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>Restaurant ID</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>Name</td><td>VARCHAR(100)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Address</td><td>VARCHAR(150)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Manager</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Payments"></a><table style="width:100%"><caption>Table: Payments </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>Receipt number</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>OrderID</td><td>INT</td><td>No</td><td>No</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Restaurant ID</td><td>INT</td><td>No</td><td>No</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Customer ID</td><td>INT</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Payment amount</td><td>FLOAT</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Payment accepted</td><td>TINYINT</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Orders"></a><table style="width:100%"><caption>Table: Orders </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>Order ID</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td></td><td></td></tr>
+<tr><td>UserId</td><td>INT</td><td>No</td><td>No</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Location ID</td><td>INT</td><td>No</td><td>No</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Location address</td><td>VARCHAR(150)</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Total amount</td><td>FLOAT</td><td>No</td><td>No</td><td>No</td><td></td><td></td></tr>
+<tr><td>Driver ID</td><td>INT</td><td>No</td><td>No</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>RestaurantID</td><td>INT</td><td>No</td><td>No</td><td>Yes</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+</body></html>
